@@ -1,0 +1,23 @@
+@keyframes anim {
+    from {
+        width: 100vw;
+        left:0%;
+    }
+    to {
+        width: 0vw;
+        left: 50%;
+
+    }
+}
+
+#div-animated-indicator {
+    animation: anim 2s infinite;
+    width: 100vw;
+    position: absolute;
+    top:0px;
+    height: 2pt;
+    background-color: red;
+    display: block;
+    z-index: 9999;
+    animation-direction: alternate;
+}

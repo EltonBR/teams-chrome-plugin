@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "teams push-to-talk and MIC enabled Indicator",
+    "version": "0.1",
+    "browser_action": {
+        "default-popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://teams.microsoft.com/*"],
+            "css": ["style.css"],
+            "js": ["teams-plugin.js"]
+        }
+    ]
+}
