@@ -22,7 +22,7 @@ class MicIndicator {
 
     watchMicChanges() {
         this.interval = setInterval(() => {
-            let micBtn = document.querySelector(".icons-call-microphone-off-filled") ?? document.querySelector(".icons-call-microphone")
+            let micBtn = document.querySelector("#microphone-button .icons-call-microphone-off-filled") ?? document.querySelector("#microphone-button .icons-call-microphone")
             if (micBtn === null) {
                 this.hide();
                 return;
@@ -57,7 +57,7 @@ const pushToTalkEvent = (e) => {
     console.log()
 
     const mute = (mute) => {
-        var micBtn = document.querySelector(".icons-call-microphone-off-filled") ?? document.querySelector(".icons-call-microphone")
+        var micBtn = document.querySelector("#microphone-button .icons-call-microphone-off-filled") ?? document.querySelector("#microphone-button .icons-call-microphone")
         isMuted = [...micBtn.classList].indexOf("icons-call-microphone-off-filled") > -1;
         if (mute) {
             if (isMuted) {
